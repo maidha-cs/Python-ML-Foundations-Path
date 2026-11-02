@@ -1,0 +1,28 @@
+# Topic 01: Computer Systems - How Programs Use Memory
+
+When a program executes, the Operating System allocates portions of RAM into distinct memory segments. 
+
+---
+
+## 1. The Stack Memory
+* **Structure:** Operates on a LIFO (Last In, First Out) basis.
+* **Purpose:** Stores temporary variables, function calls, and primitive data types.
+* **Lifespan:** Automatically allocated when a function starts and deallocated as soon as the function exits.
+* **Speed:** Very fast access speed.
+
+---
+
+## 2. The Heap Memory
+* **Structure:** A large, unstructured pool of memory for dynamic allocation.
+* **Purpose:** Stores complex objects, large datasets, lists, and structures whose sizes are determined at runtime.
+* **Lifespan:** Persists until explicitly deleted or cleaned up by a Garbage Collector (e.g., Python's memory management).
+* **Speed:** Slower compared to the stack due to pointer lookups.
+
+---
+
+## Summary Comparison
+| Feature | Stack | Heap |
+| :--- | :--- | :--- |
+| **Speed** | Fast | Slower |
+| **Lifetime** | Temporary (Function scope) | Long-lived until released |
+| **Management** | Automatic | Automatic (Garbage Collector) or Manual |
